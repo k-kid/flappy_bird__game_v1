@@ -15,7 +15,7 @@ for (let index = 0; index <= 4; index++) {
     }
 }
 basic.forever(function () {
-    while (Obstacles.length > 0 && Obstacles[0].get(LedSpriteProperty.X) == "0") {
+    while (Obstacles.length > 0 && Obstacles[0].get(LedSpriteProperty.X) == 0) {
         Obstacles.removeAt(0).delete()
     }
     for (let Obstacle of Obstacles) {
